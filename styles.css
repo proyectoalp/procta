@@ -58,6 +58,7 @@ main {
     cursor: pointer;
     font-size: 1rem;
     margin-top: 10px;
+    width: 80%;
 }
 
 .card button:hover {
